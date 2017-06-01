@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.lang {
+	  display: none;
+	}
+
+	.lang.visible {
+	  display: inline;
+	  font-size: 20px;
+		color: brown;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<div id="languages">
+		  <label>
+			<input type="radio" name="lang" value="ua">UA
+		  </label>
+		  <label>
+			<input type="radio" name="lang" value="ru">RU
+		  </label>
+		  <label>
+			<input type="radio" name="lang" value="eng">ENG
+		  </label>
+		</div>
+		<div id="welcome-message">
+		  <span class="lang lang-ua">Привіт</span>
+		  <span class="lang lang-ru">Привет</span>
+		  <span class="lang lang-eng">Hello</span>
+		  , username!
+
+		  <span class="lang lang-ua">Раді тебе бачити!</span>
+		  <span class="lang lang-ru">Раді тебе бачити!</span>
+		  <span class="lang lang-eng">Раді тебе бачити!</span>
+		</div>
+	</div>
+	<button id="save">Save</button>
+	<script src="localizatiom.js"></script>
+</body>
+</html>
